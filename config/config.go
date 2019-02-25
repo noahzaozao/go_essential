@@ -4,8 +4,8 @@ type SettingConfig struct {
 	SECRET_KEY string `json:"SECRET_KEY"`
 	DEBUG string `json:"DEBUG"`
 	DEFAULT_CHARSET string `json:"DEFAULT_CHARSET"`
-	DATABASES DatabaseConfig `json:"DATABASES"`
-	CACHES CacheConfig `json:"CACHES"`
+	DATABASES []DatabaseConfig `json:"DATABASES"`
+	CACHES []CacheConfig `json:"CACHES"`
 }
 
 type OSSConfig struct {
