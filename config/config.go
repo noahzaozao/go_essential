@@ -1,4 +1,4 @@
-package essential
+package config
 
 type OSSConfig struct {
 	ENDPOINT          string `json:"ENDPOINT"`
