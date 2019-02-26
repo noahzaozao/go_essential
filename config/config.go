@@ -20,6 +20,7 @@ type CacheConfig struct {
 	Type string `json:"type"`
 	Host string `json:"host"`
 	Port string `json:"port"`
+	DB int `json:"db"`
 	Password string `json:"password"`
 }
 
