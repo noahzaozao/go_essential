@@ -6,16 +6,6 @@ import (
 	"encoding/base64"
 )
 
-type AuthClaims interface {
-	GetUser() interface{}
-	Valid() error
-}
-
-type Authable interface {
-	Decode(token string) (*AuthClaims, error)
-	Encode(user interface{}) (string, error)
-}
-
 func GetPasswordMd5(password string) (passwordMd5 string, err error) {
 	m := md5.New()
 	m.Write([]byte(password))
